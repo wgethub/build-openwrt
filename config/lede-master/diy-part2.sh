@@ -29,8 +29,14 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-
+# svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+svn co https://github.com/sirpdboy/luci-app-ddns-go package/luci-app-ddns-go
+svn co https://github.com/sirpdboy/netspeedtest package/luci-app-netspeedtest
+svn co https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
+svn co https://github.com/vernesong/OpenClash package/luci-app-openclash
+svn co https://github.com/kuoruan/luci-app-v2ray/tree/luci2 package/luci-app-v2ray
+svn co https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+# svn co https://github.com/nondanee/UnblockNeteaseMusic
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
